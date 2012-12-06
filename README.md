@@ -9,4 +9,4 @@ $cake schema create
 </code>
 
 
-
+元記事は[こちら](http://blog.milds.net/2012/12/cakephpaclphpacliniphp.html)に
