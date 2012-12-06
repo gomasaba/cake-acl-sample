@@ -1,0 +1,125 @@
+2012-12-05 20:10:12 Error: [MissingActionException] Action UsersController::login() could not be found.
+#0 /mnt/hgfs/projects/www/html/cake_acl/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /mnt/hgfs/projects/www/html/cake_acl/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /mnt/hgfs/projects/www/html/cake_acl/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-12-05 20:11:11 Error: [MissingViewException] View file "/mnt/hgfs/projects/www/html/cake_acl/app/View/Users/login.ctp" is missing.
+#0 /mnt/hgfs/projects/www/html/cake_acl/lib/Cake/View/View.php(473): View->_getViewFileName(NULL)
+#1 /mnt/hgfs/projects/www/html/cake_acl/lib/Cake/Controller/Controller.php(956): View->render(NULL, NULL)
+#2 /mnt/hgfs/projects/www/html/cake_acl/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#3 /mnt/hgfs/projects/www/html/cake_acl/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /mnt/hgfs/projects/www/html/cake_acl/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-12-05 20:11:44 Error: [MissingLayoutException] Layout file "/mnt/hgfs/projects/www/html/cake_acl/app/View/Layouts/login.ctp" is missing.
+#0 /mnt/hgfs/projects/www/html/cake_acl/lib/Cake/View/View.php(514): View->_getLayoutFileName('login')
+#1 /mnt/hgfs/projects/www/html/cake_acl/lib/Cake/View/View.php(484): View->renderLayout('', 'login')
+#2 /mnt/hgfs/projects/www/html/cake_acl/lib/Cake/Controller/Controller.php(956): View->render(NULL, NULL)
+#3 /mnt/hgfs/projects/www/html/cake_acl/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#4 /mnt/hgfs/projects/www/html/cake_acl/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#5 /mnt/hgfs/projects/www/html/cake_acl/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2012-12-05 20:16:55 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'User.mailaddress' in 'where clause'
+#0 /mnt/hgfs/projects/www/html/cake_acl/lib/Cake/Model/Datasource/DboSource.php(459): PDOStatement->execute(Array)
+#1 /mnt/hgfs/projects/www/html/cake_acl/lib/Cake/Model/Datasource/DboSource.php(425): DboSource->_execute('SELECT `User`.`...', Array)
+#2 /mnt/hgfs/projects/www/html/cake_acl/lib/Cake/Model/Datasource/DboSource.php(669): DboSource->execute('SELECT `User`.`...', Array, Array)
+#3 /mnt/hgfs/projects/www/html/cake_acl/lib/Cake/Model/Datasource/DboSource.php(1080): DboSource->fetchAll('SELECT `User`.`...', false)
+#4 /mnt/hgfs/projects/www/html/cake_acl/lib/Cake/Model/Model.php(2637): DboSource->read(Object(User), Array)
+#5 /mnt/hgfs/projects/www/html/cake_acl/lib/Cake/Controller/Component/Auth/BaseAuthenticate.php(89): Model->find('first', Array)
+#6 /mnt/hgfs/projects/www/html/cake_acl/lib/Cake/Controller/Component/Auth/FormAuthenticate.php(65): BaseAuthenticate->_findUser('admin@test.com', 'admin')
+#7 /mnt/hgfs/projects/www/html/cake_acl/lib/Cake/Controller/Component/AuthComponent.php(633): FormAuthenticate->authenticate(Object(CakeRequest), Object(CakeResponse))
+#8 /mnt/hgfs/projects/www/html/cake_acl/lib/Cake/Controller/Component/AuthComponent.php(510): AuthComponent->identify(Object(CakeRequest), Object(CakeResponse))
+#9 /mnt/hgfs/projects/www/html/cake_acl/app/Controller/UsersController.php(40): AuthComponent->login()
+#10 [internal function]: UsersController->login()
+#11 /mnt/hgfs/projects/www/html/cake_acl/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#12 /mnt/hgfs/projects/www/html/cake_acl/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#13 /mnt/hgfs/projects/www/html/cake_acl/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#14 /mnt/hgfs/projects/www/html/cake_acl/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2012-12-06 03:27:12 Error: [MissingControllerException] Controller class LogoutController could not be found.
+#0 /mnt/hgfs/projects_github/cake_acl/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-06 03:30:03 Error: Fatal Error (1): Class 'AuthCompont' not found in [/mnt/hgfs/projects_github/cake_acl/app/View/Layouts/default.ctp, line 43]
+2012-12-06 03:30:03 Error: [FatalErrorException] Class 'AuthCompont' not found
+#0 /mnt/hgfs/projects_github/cake_acl/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Class 'AuthComp...', '/mnt/hgfs/proje...', 43)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'AuthComp...', '/mnt/hgfs/proje...', 43, Array)
+#2 /mnt/hgfs/projects_github/cake_acl/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Class 'AuthComp...', '/mnt/hgfs/proje...', 43, Array)
+#3 /mnt/hgfs/projects_github/cake_acl/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-06 03:45:42 Error: [AclException] Neither "allow" nor "deny" rules were provided in configuration.
+#0 /mnt/hgfs/projects_github/cake_acl/lib/Cake/Controller/Component/Acl/PhpAcl.php(80): PhpAcl->build(Array)
+#1 /mnt/hgfs/projects_github/cake_acl/lib/Cake/Controller/Component/AclComponent.php(92): PhpAcl->initialize(Object(AclComponent))
+#2 /mnt/hgfs/projects_github/cake_acl/lib/Cake/Controller/Component/AclComponent.php(68): AclComponent->adapter('PhpAcl')
+#3 /mnt/hgfs/projects_github/cake_acl/lib/Cake/Controller/ComponentCollection.php(105): AclComponent->__construct(Object(ComponentCollection), Array)
+#4 /mnt/hgfs/projects_github/cake_acl/lib/Cake/Controller/ComponentCollection.php(52): ComponentCollection->load('Acl', Array)
+#5 /mnt/hgfs/projects_github/cake_acl/lib/Cake/Controller/Controller.php(634): ComponentCollection->init(Object(PostsController))
+#6 /mnt/hgfs/projects_github/cake_acl/lib/Cake/Routing/Dispatcher.php(182): Controller->constructClasses()
+#7 /mnt/hgfs/projects_github/cake_acl/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#8 /mnt/hgfs/projects_github/cake_acl/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2012-12-06 03:45:42 Error: Fatal Error (1): Class 'AuthComponent' not found in [/mnt/hgfs/projects_github/cake_acl/app/View/Layouts/default.ctp, line 45]
+2012-12-06 03:45:42 Error: [FatalErrorException] Class 'AuthComponent' not found
+#0 /mnt/hgfs/projects_github/cake_acl/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Class 'AuthComp...', '/mnt/hgfs/proje...', 45)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'AuthComp...', '/mnt/hgfs/proje...', 45, Array)
+#2 /mnt/hgfs/projects_github/cake_acl/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Class 'AuthComp...', '/mnt/hgfs/proje...', 45, Array)
+#3 /mnt/hgfs/projects_github/cake_acl/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-06 03:45:52 Error: [AclException] Neither "allow" nor "deny" rules were provided in configuration.
+#0 /mnt/hgfs/projects_github/cake_acl/lib/Cake/Controller/Component/Acl/PhpAcl.php(80): PhpAcl->build(Array)
+#1 /mnt/hgfs/projects_github/cake_acl/lib/Cake/Controller/Component/AclComponent.php(92): PhpAcl->initialize(Object(AclComponent))
+#2 /mnt/hgfs/projects_github/cake_acl/lib/Cake/Controller/Component/AclComponent.php(68): AclComponent->adapter('PhpAcl')
+#3 /mnt/hgfs/projects_github/cake_acl/lib/Cake/Controller/ComponentCollection.php(105): AclComponent->__construct(Object(ComponentCollection), Array)
+#4 /mnt/hgfs/projects_github/cake_acl/lib/Cake/Controller/ComponentCollection.php(52): ComponentCollection->load('Acl', Array)
+#5 /mnt/hgfs/projects_github/cake_acl/lib/Cake/Controller/Controller.php(634): ComponentCollection->init(Object(UsersController))
+#6 /mnt/hgfs/projects_github/cake_acl/lib/Cake/Routing/Dispatcher.php(182): Controller->constructClasses()
+#7 /mnt/hgfs/projects_github/cake_acl/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#8 /mnt/hgfs/projects_github/cake_acl/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2012-12-06 03:45:52 Error: Fatal Error (1): Class 'AuthComponent' not found in [/mnt/hgfs/projects_github/cake_acl/app/View/Layouts/default.ctp, line 45]
+2012-12-06 03:45:52 Error: [FatalErrorException] Class 'AuthComponent' not found
+#0 /mnt/hgfs/projects_github/cake_acl/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Class 'AuthComp...', '/mnt/hgfs/proje...', 45)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'AuthComp...', '/mnt/hgfs/proje...', 45, Array)
+#2 /mnt/hgfs/projects_github/cake_acl/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Class 'AuthComp...', '/mnt/hgfs/proje...', 45, Array)
+#3 /mnt/hgfs/projects_github/cake_acl/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-06 03:46:00 Error: [AclException] Neither "allow" nor "deny" rules were provided in configuration.
+#0 /mnt/hgfs/projects_github/cake_acl/lib/Cake/Controller/Component/Acl/PhpAcl.php(80): PhpAcl->build(Array)
+#1 /mnt/hgfs/projects_github/cake_acl/lib/Cake/Controller/Component/AclComponent.php(92): PhpAcl->initialize(Object(AclComponent))
+#2 /mnt/hgfs/projects_github/cake_acl/lib/Cake/Controller/Component/AclComponent.php(68): AclComponent->adapter('PhpAcl')
+#3 /mnt/hgfs/projects_github/cake_acl/lib/Cake/Controller/ComponentCollection.php(105): AclComponent->__construct(Object(ComponentCollection), Array)
+#4 /mnt/hgfs/projects_github/cake_acl/lib/Cake/Controller/ComponentCollection.php(52): ComponentCollection->load('Acl', Array)
+#5 /mnt/hgfs/projects_github/cake_acl/lib/Cake/Controller/Controller.php(634): ComponentCollection->init(Object(PostsController))
+#6 /mnt/hgfs/projects_github/cake_acl/lib/Cake/Routing/Dispatcher.php(182): Controller->constructClasses()
+#7 /mnt/hgfs/projects_github/cake_acl/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#8 /mnt/hgfs/projects_github/cake_acl/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2012-12-06 03:46:00 Error: Fatal Error (1): Class 'AuthComponent' not found in [/mnt/hgfs/projects_github/cake_acl/app/View/Layouts/default.ctp, line 45]
+2012-12-06 03:46:00 Error: [FatalErrorException] Class 'AuthComponent' not found
+#0 /mnt/hgfs/projects_github/cake_acl/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Class 'AuthComp...', '/mnt/hgfs/proje...', 45)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'AuthComp...', '/mnt/hgfs/proje...', 45, Array)
+#2 /mnt/hgfs/projects_github/cake_acl/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Class 'AuthComp...', '/mnt/hgfs/proje...', 45, Array)
+#3 /mnt/hgfs/projects_github/cake_acl/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-06 19:58:48 Error: Fatal Error (4): syntax error, unexpected ')' in [/mnt/hgfs/projects/www/html/cake_acl/lib/Cake/Controller/Component/Acl/PhpAcl.php, line 494]
+2012-12-06 19:58:48 Error: [FatalErrorException] syntax error, unexpected ')'
+#0 /mnt/hgfs/projects/www/html/cake_acl/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/mnt/hgfs/proje...', 494)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/mnt/hgfs/proje...', 494, Array)
+#2 /mnt/hgfs/projects/www/html/cake_acl/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/mnt/hgfs/proje...', 494, Array)
+#3 /mnt/hgfs/projects/www/html/cake_acl/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-06 20:52:37 Error: [CakeException] Authorization adapter "CrudAuthorize" was not found.
+#0 /mnt/hgfs/projects/www/html/cake_acl/lib/Cake/Controller/Component/AuthComponent.php(376): AuthComponent->constructAuthorize()
+#1 /mnt/hgfs/projects/www/html/cake_acl/lib/Cake/Controller/Component/AuthComponent.php(326): AuthComponent->isAuthorized(Array)
+#2 [internal function]: AuthComponent->startup(Object(PostsController))
+#3 /mnt/hgfs/projects/www/html/cake_acl/lib/Cake/Utility/ObjectCollection.php(130): call_user_func_array(Array, Array)
+#4 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#5 /mnt/hgfs/projects/www/html/cake_acl/lib/Cake/Event/CakeEventManager.php(246): call_user_func(Array, Object(CakeEvent))
+#6 /mnt/hgfs/projects/www/html/cake_acl/lib/Cake/Controller/Controller.php(670): CakeEventManager->dispatch(Object(CakeEvent))
+#7 /mnt/hgfs/projects/www/html/cake_acl/lib/Cake/Routing/Dispatcher.php(183): Controller->startupProcess()
+#8 /mnt/hgfs/projects/www/html/cake_acl/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#9 /mnt/hgfs/projects/www/html/cake_acl/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
